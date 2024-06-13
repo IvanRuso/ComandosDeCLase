@@ -1,0 +1,186 @@
+-- Comandos Simples de git
+(valores --local, --global, --system)
+Repositorio, Repositorios, El PC
+
+Configurar git usuario
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu email@ejemplo.com"
+
+Configurar el realizar los cambios hasta que se cierre el editor
+git config --global core.editor "code --wait"
+
+Configuracion de color de la consola
+git config --global color.ui true
+
+Checar lista de Configuraciones
+git config --list
+
+Configuracion auto carriage return y linefield /r/n
+git config core.autocrlf true / input
+
+Por nivel y configuracions ya hechas
+$ git config --local/global/system --list
+--local "No funciona sin repositorio"
+
+Eliminar Configuracion
+git config --unset 
+
+Inicializar un Repositorio
+git init
+ 
+Clonar un Repositorio
+git clone <url del repositorio>
+ 
+Estado del Repositorio
+git status
+
+Estado del Repositorio Simple
+git status -s
+ 
+Añadir Archivos al Área de Preparación
+git add <archivo>
+git add . (Para añadir todos los archivos)
+
+Eliminar Archivos del Área de Preparación
+git rm --cached <archivo>
+git rm --cached -r . (Para Eliminar todos los archivos)
+
+Crear un commit
+git commit
+
+Crear un Commit corto
+git commit -m "Mensaje del commit"
+ 
+Ver el Historial de Commits
+git log
+presionar enter y sale de la lista con "q" (quit)
+
+abreviacion de ids de commits
+git log --oneline
+
+Configuracion de abreviacion de ids de commits
+git config --global core.abbrev 8
+
+Renombrar un archivo
+git rm <nombre del archivo> <nuevo nombre del archivo> 
+
+-- Comandos Intermedios
+Comitear sin pasar por el aera de preparación
+git commit -a
+
+Cambiar el commit en el que estamos
+git commit --amend
+
+Cambiar mensaje de un commit solamente
+git commit --amend -m "Nuevo mensaje del commit"
+
+Ver los cambios dentro de un archivo con respecto al ultimo commit
+git show "Nombre Archivo"
+ 
+Ver Diferencias entre area de trabajo y lo no traquedo
+git diff
+
+Ver Diferencias entre area de preparación y ultimo commit
+git diff --staged
+
+Ver Diferencias entre lo modificado entre 2 commits
+git diff id.commit id.commit
+
+Ver Diferencias entre lo modificado entre 2 commits solo por nombre de archivos
+git diff --name-only id.commit id.commit
+
+Ver Diferencias entre lo modificado entre 2 commits por linea
+git diff --word-diff id.commit id.commit
+
+Ver Ramas Existentes
+git branch
+ 
+Crear una Nueva Rama
+git branch <nombre de la rama>
+
+Restaurar un archivo fuera del area de preparación desde el commit
+git restore <archivo>
+
+Restaurar un archivo fuera del area de preparación desde el commit
+git restore --staged <archivo>
+
+Restaurar un archivo fuera del area de preparacion desde el commit
+git checkout <archivo>
+ 
+Mostrar los archivos fuera del aera de preparación.
+git checkout
+
+Cambiar de Rama
+git checkout <nombre de la rama>
+ 
+Combinar Ramas
+git merge <nombre de la rama>
+ 
+Eliminar una Rama
+git branch -d <nombre de la rama>
+ 
+Verificar Ramas Remotas
+git branch -r
+ 
+-- Comandos Avanzados
+Si necesitas modificar el link de origen, puedes hacerlo con el siguiente comando:
+git remote set-url origin https://github.com/usuario/nuevo-repo.git
+
+Regresar a un commit anterior
+git rebase -i HEAD~n
+ 
+Revertir Cambios en un Archivo que no este en el area de preparación
+git checkout -- <archivo>
+ 
+Eliminar Cambios No Comiteados
+git reset --hard
+ 
+Resetear a un Commit Específico
+git reset --hard <id del commit>
+ 
+Eliminar un Commit
+git revert <id del commit>
+ 
+Rebase
+git rebase <nombre de la rama>
+ 
+Aplicar un Stash
+git stash
+git stash apply
+ 
+Enviar Cambios al Repositorio Remoto
+git push
+git push origin <nombre de la rama>
+ 
+Traer Cambios del Repositorio Remoto
+git pull
+ 
+Fetch (Obtener datos remotos sin combinar)
+git fetch
+ 
+Tagging (Etiquetado)
+git tag <nombre del tag>
+git push origin <nombre del tag>
+ 
+Mostrar el Log de una Rama con un Gráfico
+git log --oneline --graph --all
+ 
+Cambiar el Mensaje del Último Commit
+git commit --amend -m "Nuevo mensaje"
+ 
+Rebasing Interactivo
+git rebase -i <commit base>
+ 
+Configuración del Alias de Git
+git config --global alias.<alias> '<comando git>'
+ 
+Configuración del Helper de Credenciales
+git config --global credential.helper 'cache --timeout=3600'
+ 
+Trabajar con Submódulos
+git submodule add <url del repositorio>
+git submodule update --init
+
+curl -H "Authorization: token YOUR GITHUB TOKEN" \
+     -d '{"name": "nombre-del-repositorio", "private": false}' \
+     https://api.github.com/user/repos

@@ -1,0 +1,95 @@
+Hola que tal comandos de organizacion y control por medio de git. CUIDADO CON MAYUSCULAS Y EXTENCIONESs.
+
+mkdir "directorio":
+- Crea un nuevo directorio.
+
+touch "nombre de archivo".(exencion): 
+- Nos permite crear archivos nuevos.
+
+cat "nombre de archivo": 
+- Nos permite ver el contenido de un archivo.
+
+pwd:
+- Nos muestra la carpeta actual en la que nos encontramos.
+
+cd "directorio":               
+- Cambia el directorio al directorio indicado.
+
+cd ..:                         
+- Cambia el directorio al directorio por encima del directorio actual.
+
+cd o cd ~:                     
+- Nos lleva a la ruta del usuario.
+
+cd "C,D,E,F... : ":            
+- Cambia el directorio al directorio raíz.
+
+cd -:                          
+- Nos lleva directamente al ultimo directorio visitado.
+
+dir/ls:                        
+- Muestra una lista de todos los archivos en el directorio actual (carpeta).
+
+ls -a:
+- Muestra una lista de todos los archivos en el directorio actual incluido arhcivos ocultos.
+
+ls -l: 
+- Ver todos los archivos como una lista en donde incluye el usuario, grupo, permisos sobre el archivo, tamaño, fecha y hora de creación.
+
+ls -lh: 
+- Muestra la misma información que ls-l pero con unidades de tamaño, es decir, kb o mb.
+
+ls-R: 
+- Muestra el contenido de todos los sudirectorios de forma recursiva.
+
+ls -S:
+- Ordena los resultados por tamaño de archivo.
+
+cp "archivo" "destination/":    
+- Copia archivos a otra ubicación.
+
+rm "nombre de archivo" "nombre de archivo":                   
+- Elimina uno o más archivos.
+
+rmdir “nombre del directorio”/: 
+- Borrar un directorio: Solo funciona con directorios vacíos.
+
+rm -r ‘nombre de la carpeta’ :
+- Eliminar la carpeta y los archivos dentro de ella de forma recursiva.
+
+mv "archivo" "nuevo nombre":
+- Cambiar el nombre de un archivo
+
+mv "archivo" "ubicación"/:
+- Mover un archivo o carpeta a otra ubicación, cortar y pegar.
+ 
+--help: 
+- Muestra todos los comandos que se pueden utilizar, con una breve descripción.
+
+clear:
+- Limpia la pantalla de 
+
+history:
+- Da un listado de los comandos usandos en al secion.
+
+
+find:
+find .
+find . -name "archivo.txt"
+find . -name "*.txt"
+find . -type d -name "nombre_directorio"
+find . -size +1M
+find . -mtime -7
+find . -name "*.log" -exec rm {} \;
+find . -type f -exec grep -l "texto_a_buscar" {} +
+find /scripts -name "*.sh" -mtime -3 -exec ls -l {} \; 
+------------------------------------------------------------------------ Buscar
+Buscar todos los archivos y directorios a partir del directorio actual.
+Buscar archivos por nombre específico.
+Buscar archivos por extensión específica.
+Buscar directorios por nombre específico.
+Buscar archivos mayores de un cierto tamaño (por ejemplo, más grandes de 1 MB).
+Buscar archivos modificados en los últimos 7 días.
+Buscar y ejecutar un comando sobre los archivos encontrados (por ejemplo, eliminar archivos .log).
+Buscar archivos que contienen una cadena de texto específica.
+Buscar todos los archivos .sh en el directorio /scripts que fueron modificados en los últimos 3 días y listar sus detalles.
