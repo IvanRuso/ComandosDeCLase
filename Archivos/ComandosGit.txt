@@ -129,8 +129,18 @@ git remote set-url origin https://github.com/usuario/nuevo-repo.git
 Regresar a un commit anterior
 git rebase -i HEAD~n
  
+Regresar los commits borrados por modificar uno pasado
+git rebase --continue
+
 Revertir Cambios en un Archivo que no este en el area de preparación
 git checkout -- <archivo>
+
+Resetear a un Commit Específico
+git reset --hard <id del commit>
+
+Volver atras a los commits (soft/mixed/hard)
+git reset --soft id_commit
+git reset --soft HEAD~n
  
 Eliminar Cambios No Comiteados
 git reset --hard
