@@ -1,14 +1,14 @@
 ASITENCIA                           DIA 1   DIA 2   DIA 3   DIA 4   DIA 5   TFC-O
-SERGIO ALBERTO ALVARADO ACOSTA 	    	@   @       @
+SERGIO ALBERTO ALVARADO ACOSTA 	    	@       @       @       @
 AXEL ARTURO CORREA VAZQUEZ
-ADRIAN EDUARDO EDUARDO RODRIGUEZ	                @
+ADRIAN EDUARDO EDUARDO RODRIGUEZ	                    @       @
 REYES MORALES JOSE MANUEL                           
 HECTOR ARDAN MONTIEL OLVERA
-MILTON SAMUEL MORALES ROMERO 	    	@   @       @
+MILTON SAMUEL MORALES ROMERO 	    	@        @       @      @
 DAVID ADRIANO RAMIREZ MEDINA
-JUAN DIEGO RODRIGUEZ ROLDAN             @           @
+JUAN DIEGO RODRIGUEZ ROLDAN             @                @      @
 JONATHAN JOSUE ROSAS MONTEJO
-DIEGO SANCHEZ ROJAS 		        	@   @       @
+DIEGO SANCHEZ ROJAS 		        	@        @       @
 LUIS ARTURO VAZQUEZ ROSALES
-AARON ISAIAS VELASCO LOPEZ                  @
-JOSE EDUARDO VELAZQUEZ GONZALEZ 	    @   @       @
+AARON ISAIAS VELASCO LOPEZ                       @
+JOSE EDUARDO VELAZQUEZ GONZALEZ 	    @        @       @       
