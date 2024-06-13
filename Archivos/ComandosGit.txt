@@ -138,16 +138,13 @@ git checkout -- <archivo>
 Resetear a un Commit Específico
 git reset --hard <id del commit>
 
-Volver atras a los commits (soft/mixed/hard)
-git reset --soft id_commit
-git reset --soft HEAD~n
- 
 Eliminar Cambios No Comiteados
 git reset --hard
  
-Resetear a un Commit Específico
+Resetear a un Commit Específico (soft/mixed/hard)
 git reset --hard <id del commit>
- 
+git reset --soft HEAD~n
+
 Eliminar un Commit
 git revert <id del commit>
  
